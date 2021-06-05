@@ -17,7 +17,7 @@ elif [ -f $1 ]
 then
     file_exists
 else
-    printf "#!/usr/bin/env bash \n\n" >> $1
+    printf "#!/bin/bash \n\n" >> $1
     chmod 755 $1
     open /Applications/Visual\ Studio\ Code.app $1
 fi

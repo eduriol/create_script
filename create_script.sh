@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 no_filename() {
     echo "Please provide a name for the script file."

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 no_filename() {
     echo "Please provide a name for the script file."
@@ -10,15 +10,15 @@ file_exists() {
     exit 1
 }
 
-if [ -z $1 ]
+if [[ -z "$1" ]]
 then
     no_filename
-elif [ -f $1 ]
+elif [[ -f "$1" ]]
 then
     file_exists
 else
-    printf "#!/bin/bash \n\n" >> $1
-    chmod 755 $1
-    open /Applications/Visual\ Studio\ Code.app $1
+    printf "#!/usr/bin/env bash \n\n" >> "$1"
+    chmod 755 "$1"
+    vim "$1"
 fi
 exit 0

@@ -10,7 +10,7 @@ then
     echo '
     Usage: ./create_script.sh script_name
 
-    This is a bash script that help you in creating new scripts.
+    This is a bash script that helps you in creating new scripts.
     Bash scripts created will include recommended best practices.
     '
     exit 0
